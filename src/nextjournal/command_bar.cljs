@@ -1,6 +1,6 @@
 (ns nextjournal.command-bar
   (:require [clojure.string :as str]
-            [nextjournal.clerk.render.hooks :as hooks]
+            [nextjournal.command-bar.hooks :as hooks]
             [nextjournal.command-bar.fuzzy :as fuzzy]
             [nextjournal.command-bar.keybind :as keybind]
             [reagent.core :as reagent]))

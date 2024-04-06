@@ -1,15 +1,15 @@
 {:paths ["src" "demo"]
- :deps {applied-science/js-interop {:mvn/version "0.3.3"}
-        org.clojure/clojure {:mvn/version "1.11.1"}
+ :deps {org.clojure/clojure {:mvn/version "1.11.1"}
         org.clojure/clojurescript {:mvn/version "1.11.60"}
-        reagent/reagent {:mvn/version "1.1.1"}
-        io.github.nextjournal/clerk {:git/sha "b7207926bacb10e6af17075efd71df3363b74d21"}
-        io.github.nextjournal/clerk.render {:git/url "https://github.com/nextjournal/clerk"
-                                            :git/sha "b7207926bacb10e6af17075efd71df3363b74d21"
-                                            :deps/root "render"
-                                            :exclusions [io.github.nextjournal/clojure-mode]}
-        io.github.nextjournal/clojure-mode {:git/url "https://github.com/nextjournal/clojure-mode"
-                                            :git/sha "760512c0434944975ab19784ae8c73d2152bf72b"}}
+        reagent/reagent {:mvn/version "1.1.1"}}
  :aliases {:dev {:extra-deps {thheller/shadow-cljs {:mvn/version "2.24.0"}}}
            :demo {:extra-paths ["demo/src"]
-                  :jvm-opts ["-Dpolyglot.engine.WarnInterpreterOnly=false"]}}}
+                  :jvm-opts ["-Dpolyglot.engine.WarnInterpreterOnly=false"]
+                  :extra-deps {applied-science/js-interop {:mvn/version "0.3.3"}
+                               io.github.nextjournal/clerk {:git/sha "b7207926bacb10e6af17075efd71df3363b74d21"}
+                               io.github.nextjournal/clerk.render {:git/url "https://github.com/nextjournal/clerk"
+                                                                   :git/sha "b7207926bacb10e6af17075efd71df3363b74d21"
+                                                                   :deps/root "render"
+                                                                   :exclusions [io.github.nextjournal/clojure-mode]}
+                               io.github.nextjournal/clojure-mode {:git/url "https://github.com/nextjournal/clojure-mode"
+                                                                   :git/sha "760512c0434944975ab19784ae8c73d2152bf72b"}}}}}
